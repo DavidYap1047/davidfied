@@ -294,4 +294,75 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .input-group .input {
+    font-size: 1.5rem;
+  }
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 0 10px 10px lightgray;
+  border-radius: 20px;
+  margin: 3rem;
+  overflow: hidden;
+}
+
+.card__header {
+  padding: 3rem 2.5rem;
+}
+
+.card__body {
+  padding: 4rem 2.5rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  right: 5%;
+  top: -6px;
+}
+
+.plan .plan__title {
+  color: #fff;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.plan .plan__price {
+  font-size: 6rem;
+}
+
+.plan .plan__billing-cycle {
+  font-size: 2.4rem;
+  opacity: 80%;
+}
+
+.plan .badge--small {
+  background: #126de4;
+  margin-left: 1rem;
+}
+
+.plan .plan__description {
+  display: inline-block;
+  font-size: 2rem;
+  opacity: 70%;
+  letter-spacing: 1px;
+}
+
+.card__body .list {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
 }
