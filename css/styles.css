@@ -365,4 +365,41 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .plan .plan__title {
+    font-size: 1.8rem;
+  }
+
+  .plan .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan .plan__description {
+    font-size: 1.5rem;
+  }
+
+  .card__body .list {
+    font-size: 1.8rem;
+  }
+}
+
+/* Media */
+.media {
+  display: flex;
+  flex-direction: row;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__icon {
+  padding: 1rem 1rem 0 3rem;
 }
