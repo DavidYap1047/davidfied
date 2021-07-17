@@ -1,8 +1,173 @@
+html {
+  font-size: 62.5%;
+}
+
 /* Palette */
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-heading: #1b0760;
-  --color-body: #b2afbf;
+  --color-body: #918ca4;
+}
+
+/* Typography */
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--color-heading);
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+  color: var(--color-body);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link--arrow {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+.link--arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin-left 0.15s;
+}
+
+.link--arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link--arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+.badge {
+  font-size: 2rem;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list__item {
+  color: var(--color-heading);
+  font-weight: 600;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 2.5rem;
+  font-size: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 4rem;
+}
+
+.list--tick .list__item {
+  padding-left: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--inline .list__item {
+    font-size: 1.5rem;
+  }
+
+  .list--tick .list__item {
+    font-size: 1.8rem;
+  }
 }
